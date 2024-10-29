@@ -25,9 +25,10 @@
             $x = 1;
             while($row = mysqli_fetch_array($zap))
             {
-                echo "<tr><td>$x</td><td>$row[imie]</td><td>$row[nazwisko]</td><td>$row[adres]</td><td>$row[miasto]</td><td><button class='btn btn-primary'>Edytuj</button><button class='btn btn-danger'>Usuń</button></td></tr>";
+                echo "<tr><td>$x</td><td>$row[imie]</td><td>$row[nazwisko]</td><td>$row[adres]</td><td>$row[miasto]</td><td><a href='edit.html'><button class='btn btn-primary'>Edytuj</button></a><button class='btn btn-danger'>Usuń</button></td></tr>";
                 $x++;
             }
+            mysqli_close($conn);
         ?>
     </table>
 </body>
