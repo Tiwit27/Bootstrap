@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div id="main" class="w-25">
         <form action="add.php" method="post">
-            <h2>Dodawanie nowego użytkownika</h2>
-            <label for="name">Imie</label>
-            <input type="text" name="name"><br>
-            <label for="surname">Nazwisko</label>
-            <input type="text" name="surname"><br>
-            <label for="adress">Adres</label>
-            <input type="text" name="adress"><br>
-            <label for="city">Miasto</label>
-            <input type="text" name="city"><br>
-            <input type="submit" value="Utwórz">
+            <h3>Dodawanie nowego użytkownika</h3>
+            <div class="form-group">
+                <label for="name">Imie</label>
+                <input required class="form-control" type="text" name="name"><br>
+            </div>
+            <div class="form-group">
+                <label for="surname">Nazwisko</label>
+                <input required class="form-control" type="text" name="surname"><br>
+            </div>
+            <div class="form-group">
+                <label for="adress">Adres</label>
+                <input required class="form-control" type="text" name="adress"><br>
+            </div>
+            <div class="form-group">
+                <label for="city">Miasto</label>
+                <input required class="form-control" type="text" name="city"><br>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Utwórz">
         </form>
     </div>
 </body>
